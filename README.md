@@ -30,9 +30,9 @@ NodeJS生态圈正欣欣向荣。
 
 
 
-### 提升效率的工具/插件收录
+### 实用的三方库
 
-
+[awesome-nodejs](https://github.com/thinkerHope/awesome-nodejs#streams)
 
 
 

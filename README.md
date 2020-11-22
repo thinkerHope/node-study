@@ -28,11 +28,46 @@ NodeJS生态圈正欣欣向荣。
 
 
 
+### 关于如何系统学习 NodeJS
 
+[知乎](https://www.zhihu.com/question/21567720)【阿里云云栖号的回答】
 
-### 实用的三方库
+**关注 Github 仓库 Wiki 和产品榜单**
 
-[awesome-nodejs](https://github.com/thinkerHope/awesome-nodejs#streams)
+我们上 Github 的时候，往往会很关注热门的框架库，那么这些框架库里往往蕴含着更有参考价值的宝藏，那就是 Wiki，比如 [Express](https://link.zhihu.com/?target=https%3A//github.com/expressjs/express%3Fspm%3D5176.100239.blogcont72940.20.UGCrj0)，在它的 [Wiki](https://link.zhihu.com/?target=https%3A//github.com/expressjs/express/wiki%3Fspm%3D5176.100239.blogcont72940.21.UGCrj0) 里面，除了有 Express 的升级指南，中间件列表之外，还有一个 [Frameworks built with Express](https://link.zhihu.com/?target=https%3A//github.com/expressjs/express/wiki%3Fspm%3D5176.100239.blogcont72940.22.UGCrj0%23frameworks-built-with-express)，什么意思呢，就是很多团队或者个人对 Express 不够满意，或者自己的场景更特殊，Express 不能满足，他们都基于 Express 这个框架基础或者思想来构建了一个新的框架，这些新的框架，都的基于他们的需求或者他们认为合理的方向来实现的，这些框架的源代码包括文档，大家在学习 Nodejs 的时候，可以好好研究一下，能学习到更多他人在设计框架时候考虑的方向，实现的方式，比如这些：
 
+- Feathers -- 一个迷你的数据驱动的框架
+- Monorail.js -- 一个极轻量级的 MVC 框架
+- Locomotive -- 受 Ruby on Rails 启发而开发的强大的 MVC 框架
+- CompoundJS -- 同样是受 Ruby on Rails 启发的高水平 MVC 框架
+- Calipso -- 基于 Express/Mongoose 的内容管理系统
+- Derby -- 一个实时的协作应用框架
+- Bones -- 基于 Express/Backbone 实现的 CS 应用框架
+- Matador -- Twitter 工程师开发的 MVC 框架
+- Lemmy -- 一个不可描述（爆粗口）的神秘框架
+- Mojito -- Yahoo 开发的 MVC 框架
 
+综合比较一下，就能找出更适合自己用的框架，等到对框架足够熟悉的时候，就可以去阅读他们的 issues 甚至是源代码，看的多了想的多了，就越来越上道了。
 
+**全栈的最后一公里**
+
+全栈这个词很敏感，有人不认同有人无所谓，对我而言，它就像是一个 H5 工程师一样，只是表述了一种印象或者概念，具体严谨与否不重要，因为跟人沟通，心领神会即可不必强究细节。
+
+那么在学习 Nodejs 的过程中，有一道门槛是无论如何也逃不过去的，那就是 服务器的选购配置，域名的解析指向，Nodejs 项目的部署等这些偏运维方向，这些让很多新人甚至是已经工作的工程师困扰，自己去琢磨太花费时间，不去琢磨，始终没有能力凭自己双手，让一个产品上线或者让自己的一个想法实现到互联网上，不论是成为独立站长，还是只是让朋友同学访问，于是我把这些总结了一下，以以上几个项目为例，大概分为如下几个步骤：
+
+- 部署方案规划
+- 待部署项目分析
+- 选购及备案域名
+- 厂商对比与选配阿里云服务器
+- 初步 SSH 无密码登录连接和配置
+- 搭建 Nodejs/MongoDB/Nginx 环境
+- 配置 IPTables/Fail2Ban 防火墙及主动防御
+- 域名 DNS 转移及 A 记录/CNAME 解析配置
+- MongoDB 角色配置与安全规则设置
+- 线上 MongoDB 单表单库导入导出与跨机迁移备份上传
+- PM2 发布环境配置
+- 服务器与 Git 仓库读写配置
+- PM2 一键部署线上 Nodejs 项目
+- 电影网站/ReactNative App 后台/微信公众号/微信小程序后台等项目实战部署
+- SSL 证书申请及 Nginx 证书集成提供 HTTPS 协议
+- 上线方案复盘总结
